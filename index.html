@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <title>GitFetch - GitHub Profile Finder</title>
+</head>
+
+<body>
+  
+  <!-- Main Start -->
+  <div class="main" id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="main__text-container">
+            <h1 class="main__title">GitHub Profile Finder</h1>
+            <p class="main__subtitle">
+              Check out the repositories, followers, and more, <br> just by entering a username!
+            </p>
+          </div>
+          
+          <!-- Search Input -->
+          <div class="main__input-container">
+            <input 
+              type="text" 
+              id="search" 
+              class="main__input" 
+              placeholder="Enter a GitHub username..." 
+              aria-label="GitHub Username"
+            >
+            <span>
+              <button class="btn btn--shallow searchButton">Search</button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Display Section -->
+      <div class="main__profile-container">
+        <div class="main__profile">
+          <!-- Avatar -->
+          <div class="main__profile-avatar"></div>
+
+          <!-- Profile Details -->
+          <div class="row">
+            <div class="col-md-6">
+              <p class="main__profile-name main__profile-key"></p>
+              <p class="main__profile-username main__profile-key"></p>
+              <p class="main__profile-bio main__profile-key"></p>
+            </div>
+            <div class="col-md-6">
+              <p class="main__profile-repos main__profile-key"></p>
+              <p class="main__profile-followers main__profile-key"></p>
+              <p class="main__profile-following main__profile-key"></p>
+              <p class="main__profile-url main__profile-key"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript File -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
